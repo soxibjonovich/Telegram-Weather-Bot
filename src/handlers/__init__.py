@@ -1,4 +1,4 @@
-from src.handlers.user.default import main_router
+from handlers.user.default import main_router
 
 from aiogram import Router
 from typing import NoReturn, List

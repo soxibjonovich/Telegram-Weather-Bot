@@ -1,7 +1,7 @@
 import requests
 import datetime
-from src.utils.translate import to_latin
-from src.config import OPENWEATHER_API_KEY
+from utils.translate import to_latin
+from config import OPENWEATHER_API_KEY
 
 emoji_codes = {
     "Clear": "🌞 Quyoshli havo",
@@ -14,9 +14,7 @@ emoji_codes = {
 }
 
 def get_info(text):
-    if text.isascii():
-        ...
-    else:
+    if text.isascii() is False:
         text = to_latin(text)
     try:
         r = requests.get(

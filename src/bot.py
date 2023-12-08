@@ -1,7 +1,7 @@
 from aiogram.enums import ParseMode
 
-from src.handlers import register_handlers
-from src.utils.set_bot_commands import set_default_commands
+from handlers import register_handlers
+from utils.set_bot_commands import set_default_commands
 from aiogram import Dispatcher, Bot
 from aiogram.fsm.storage.memory import MemoryStorage
 

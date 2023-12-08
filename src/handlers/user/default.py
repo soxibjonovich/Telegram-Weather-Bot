@@ -1,7 +1,7 @@
 import hashlib
 from typing import NoReturn
 
-from src.utils.get_info import get_info
+from utils.get_info import get_info
 
 from aiogram import Router, types
 from aiogram.filters import CommandStart
